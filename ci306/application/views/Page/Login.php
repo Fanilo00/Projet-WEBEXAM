@@ -1,16 +1,4 @@
 
-    <?php
-    session_start();
-    include("../Inc/Functions.php");
-
-
-        if($_SERVER['REQUEST_METHOD']=='POST')
-        {
-            $_SESSION['email']=$_POST['email'];
-            $_SESSION['mdp']=$_POST['mdp'];
-            treat_login($base,$_SESSION['email'],$_SESSION['mdp']);
-        }     
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
