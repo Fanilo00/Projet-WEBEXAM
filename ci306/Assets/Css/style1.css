@@ -1,17 +1,40 @@
 * {
     font-family: "HelveticaNeueLT Std Lt Cn";
+    
 }
 
 #formbox {
+    background-color: #212121;
+    display:flex;
+    justify-content: center;
     margin: auto;
-    width: 150px;
-    height: 250px;
-    margin-top: 30px;
+    width: 250px;
+    height: 175px;
+    margin-top: 250px;
     padding: 50px;
-    border: 1px solid blue;
+    border: 1px solid #e21921;
 }
 
-body{
-background-image: url(../Images/);
-
+body {
+    background-image: url(../Images/Back.jpg);
 }
+
+.btn {
+    color:#e21921;
+    margin-top: 15px;
+}
+
+
+.h2 {
+    color:white;
+}
+
+a {
+    color:#e21921;
+}
+
+
+    /* 30%:#212121
+        60%:#f3f4ea
+        10%:#e21921
+    */
