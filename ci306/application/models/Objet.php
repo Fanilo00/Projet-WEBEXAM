@@ -16,7 +16,7 @@
             foreach($query->result_array() as $row)
             {
                 $rs[]=$row;
-            }
+            };
             return false;
         }
     }
