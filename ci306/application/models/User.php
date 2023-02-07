@@ -1,7 +1,7 @@
 <?php 
     if(! defined('BASEPATH')) exit('No direct script acces allowed');
 
-     class User extends CI_Model 
+     class MUser extends CI_Model 
     {
         public function __construct()
         {
