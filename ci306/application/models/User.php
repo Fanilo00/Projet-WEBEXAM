@@ -33,6 +33,18 @@
             }
             return false;
         }
+
+        public function inscri_user()
+        {
+            $requete = "insert into user values(null,'$nom','$email','$pass',0)";
+            $query = $this->db->query($requete);
+        }
+
+        public function inscri_admin()
+        {
+            $requete = "insert into user values(null,'$nom','$email','$pass',1)";
+            $query = $this->db->query($requete);
+        }
         
     }
 ?>
