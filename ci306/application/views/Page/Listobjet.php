@@ -1,5 +1,5 @@
 
-<?php for($i=0;$i<count($Objets);i++) { ?>
+<?php for($i=0;$i<count($Objets);$i++) { ?>
 <div class="col-sm-2">
   <div class="card">
     <div class="image">
