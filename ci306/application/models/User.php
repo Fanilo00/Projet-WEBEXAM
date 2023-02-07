@@ -34,7 +34,7 @@
             return false;
         }
 
-        public function inscri_user()
+        public function inscri_user($nom,$email,$pass)
         {
             $requete = "insert into user values(null,'$nom','$email','$pass',0)";
             $query = $this->db->query($requete);
@@ -47,4 +47,4 @@
         }
         
     }
-?>
+?>  
