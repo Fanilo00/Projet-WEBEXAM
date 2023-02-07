@@ -2,21 +2,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class LOGIN extends CI_Controller {
+class LOGIN extends CI_Controller 
+{
 
+public function index()
+{
+    $email=$this->input->post('email');
+    $pass=$this->input->post('mdp');
 
-    $data['email']=$this->input->post('email');
-    $data['pass']=$this->input->post('mdp');
-
-    $this->load->view('Template');
-
-
-
-
-
-
-
-
-
+    if
 
 }
+   
+
+    $this->load->view('Template');
+}
+
+
+
+?>

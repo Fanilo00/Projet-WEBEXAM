@@ -3,18 +3,25 @@
 
      class User extends CI_Model 
     {
-        public function get_user()
+        public function check_Login($email,$pass)
         {
-            $requete = "select * from marque";
-            $query = $this->db->query($sql);
+            $requete = "select * from user";
+            $query = $this->db->query($requete);
             $rs = array();
 
-            
             foreach($query->result_array() as $row)
             {
-                $rs[] = $row;
+                $rs[]=$row;
             }
-            return $rs;
+            for($i=0;$i<count($rs);$i)
+            {
+                if(strcmp($rs[$i]['Email'],$email)==true && strcmp($rs[$i]['Pwd'],$pass)==true)
+                {
+                        return true;
+                }
+                
+            }
+            return false;
         }
     }
 ?>
