@@ -9,14 +9,8 @@ class LOGIN extends CI_Controller {
     $data['pass']=$this->input->post('mdp');
 
     $this->load->view('Template');
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+?>
