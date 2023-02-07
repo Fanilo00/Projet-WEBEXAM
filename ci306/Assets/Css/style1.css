@@ -3,6 +3,9 @@
 }
 
 #formbox {
+    margin: auto;
+    width: 150px;
+    height: 250px;
     margin-top: 30px;
     padding: 50px;
     border: 1px solid blue;

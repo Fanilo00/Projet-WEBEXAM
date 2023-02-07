@@ -4,7 +4,7 @@
      class User extends CI_Model 
     {
         public function __construct()
-    {
+        {
         parent::__construct();
        
         if(!$this->session->has_userdata('email'))
@@ -12,7 +12,8 @@
 			redirect('welcome/index');  
 		}
 		$this->load->model('Model');
-    }
+        }
+
         public function check_Login($email,$pass)
         {
             $requete = "select * from user";
@@ -28,10 +29,10 @@
                 if(strcmp($rs[$i]['Email'],$email)==true && strcmp($rs[$i]['Pwd'],$pass)==true)
                 {
                         return true;
-                }
-                
+                }   
             }
             return false;
         }
+        
     }
 ?>
