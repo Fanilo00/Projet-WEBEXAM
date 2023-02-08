@@ -19,9 +19,10 @@ class INSCRIT extends CI_Controller
         $pass=$this->input->post('pass');
         $repass=$this->input->post('repass');
         
-        if(strcmp($pass,$repass)==true)
+        if($pass==$repass)
         {
-            $this->load->User->inscri_user($nom,$email,$pass);
+            $this->load->model('MUser');
+            $this->MUser->inscri_user($nom,$email,$pass,$repass);
             Redirect('log/index');
         }
         else
