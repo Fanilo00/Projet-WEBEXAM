@@ -7,12 +7,12 @@
         {
         parent::__construct();
        
-        if(!$this->session->has_userdata('email'))
-		{
-			redirect('welcome/index');  
-		}
-		$this->load->model('Model');
-        }
+        // if(!$this->session->has_userdata('email'))
+		// {
+		// 	redirect('welcome/index');  
+		// }
+		// $this->load->model('Model');
+        // }
 
         public function check_Login($email,$pass)
         {
