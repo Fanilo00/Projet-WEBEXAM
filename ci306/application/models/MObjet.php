@@ -16,12 +16,22 @@
             foreach($query->result_array() as $row)
             {
                 $rs[]=$row;
+                $this->
             };
             return false;
         }
-        public function par_categorie($categorie)
+        public function get_objetuser($categorie)
         {
-            $requete = "select "
+            $requete = "select * from objet_user where categorie ='$categorie'";
+            $query = $this->db->query($query);
+            $rs = array();
+
+            foreach($query->result_array() as $row)
+            {
+                $rs[]=$row;
+                $this->
+            };
+            return false;
         }
     }
 ?>
