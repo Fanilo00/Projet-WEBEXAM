@@ -33,7 +33,7 @@
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<a href="<?php echo base_url('INSCRIT/forminscrit');?>"><button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button></a>
+	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
 	            </div>
 	            
                 </form>

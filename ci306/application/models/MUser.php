@@ -13,7 +13,7 @@
 		// }
 		// $this->load->model('Model');
         // }
-
+        }
         public function check_Login($email,$pass)
         {
             $requete = "select * from user";
@@ -34,12 +34,12 @@
             return false;
         }
 
-        public function inscri_user($nom,$email,$pass)
+        public function inscri_user($nom,$email,$pass,$repass)
         {
-            $requete = "insert into user values(null,'%s','%s','%s',0)";
-            $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($email),$this->db->escape($pass));
+            $requete = "insert into user values(null,%s,%s,%s,0)";
+            $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($email),$this->db->escape($pass),$this->db->escape($repass));
             $this->db->escape($requete);
-            $line = $this->db->affected_row();
+            $line = $this->db->query($requete);
             $conf = true;
             if($line==0)
             {

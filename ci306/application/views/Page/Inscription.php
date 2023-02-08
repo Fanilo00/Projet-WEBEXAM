@@ -28,7 +28,7 @@
                             <input type="email" class="form-input" name="email" id="email" placeholder="Votre Email"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="pass" placeholder="Mot de passe"/>
+                            <input type="password" class="form-input" name="pass" id="pass" placeholder="Mot de passe"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">

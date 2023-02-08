@@ -19,12 +19,11 @@ class LOGIN extends CI_Controller
     {
         $email=$this->input->post('email');
         $pass=$this->input->post('mdp');
-
-        if($this->load->User->check_login($email,$pass))
+        $this ->load->model('MUser');
+        if($this->MUser->check_login($email,$pass))
         {
             $this->session->set_userdata('email',$email);
-            $data['Content']='Page/Home';
-            $this->load->view('Index',$data);
+            Redirect('OBJET/getObject');
         }
         else
         {
