@@ -9,8 +9,8 @@
     </div>
     <div class="card-inner">
       <div class="header">
-        <h2><?php echo $Objets[$i]['Descri'];?></h2>
-        <h3><?php echo $Objets[$i]['Prix_estimatif'];?></h3>
+       <p class="p1"><?php echo $Objets[$i]['Descri'];?></p>
+        <p class="p2"><?php echo $Objets[$i]['Prix_estimatif'];?></p>
     </div>
     <div class="content">
     </div>
