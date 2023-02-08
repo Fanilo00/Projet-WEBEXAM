@@ -8,11 +8,11 @@ class LOGIN extends CI_Controller
     {
         parent::__construct();
        
-        if(!$this->session->has_userdata('email'))
-		{
-			redirect('Log/index');  
-		}
-		$this->load->model('User');
+        // if(!$this->session->has_userdata('email'))
+		// {
+		// 	redirect('Log/index');  
+		// }
+		// $this->load->model('User');
     }
 
     public function log()
@@ -20,16 +20,19 @@ class LOGIN extends CI_Controller
         $email=$this->input->post('email');
         $pass=$this->input->post('mdp');
         $this ->load->model('MUser');
-        if($this->MUser->check_login($email,$pass))
-        {
+        $this ->load->model('MObjet');
+        // if($this->MUser->check_login($email,$pass))
+        // {
             $this->session->set_userdata('email',$email);
-            Redirect('OBJET/getObject');
-        }
-        else
-        {
-            Redirect('Page/Login');
-        }
+            $data['Content']='Page/Home';
+            $data['Objets']=$this->MObjet->get_listobjet();
+            $this->load->view('Page/Index',$data);
+            
+        // }
+       
+        //    redirect('log/index');
     }
+       
 }
 
 

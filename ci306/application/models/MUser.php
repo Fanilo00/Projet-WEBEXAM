@@ -24,9 +24,10 @@
             {
                 $rs[]=$row;
             }
-            for($i=0;$i<count($rs);$i)
+            for($i=0;$i<count($rs);$i++)
             {
-                if(strcmp($rs[$i]['Email'],$email)==true && strcmp($rs[$i]['Pwd'],$pass)==true)
+                if($rs[$i]['Email']==$email && $rs[$i]['Pwd']==$pass)
+
                 {
                         return true;
                 }   

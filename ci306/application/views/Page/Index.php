@@ -1,11 +1,11 @@
 
 <?php 
 
-        $thisthis->load->view('Page/Header');
+        $this->load->view('Page/Header');
 
-        $thisthis->load->view($Content);
+        $this->load->view($Content);
 
-        $thisthis->load->view('Page/Footer');
+        $this->load->view('Page/Footer');
 
 
 ?>

@@ -10,7 +10,7 @@
         public function get_listobjet()
         {
             $requete = "select * from objet";
-            $query = $this->db->query($query);
+            $query = $this->db->query($requete);
             $rs = array();
 
             foreach($query->result_array() as $row)
@@ -22,7 +22,7 @@
         public function get_objetuser($categorie)
         {
             $requete = "select * from objet_user where categorie ='$categorie'";
-            $query = $this->db->query($query);
+            $query = $this->db->query($requete);
             $rs = array();
 
             foreach($query->result_array() as $row)

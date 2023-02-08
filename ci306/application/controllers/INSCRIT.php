@@ -23,11 +23,11 @@ class INSCRIT extends CI_Controller
         {
             $this->load->model('MUser');
             $this->MUser->inscri_user($nom,$email,$pass,$repass);
-            Redirect('log/index');
+            redirect('log/index');
         }
         else
         {
-            Redirect('INSCRIT/forminscrit');
+            redirect('inscrit/forminscrit');
         }
         
     }
