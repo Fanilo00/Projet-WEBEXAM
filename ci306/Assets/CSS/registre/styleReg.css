@@ -137,7 +137,6 @@ body {
   color: #222;
   font-weight: 400;
   font-family: 'Montserrat';
-
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -202,7 +201,7 @@ body {
 .form-input {
   width: 100%;
   border: 1px solid #ebebeb;
-  border-radius: 5px;
+  border-radius: 0.2rem;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;

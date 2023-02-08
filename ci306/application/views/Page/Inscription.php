@@ -28,18 +28,18 @@
                             <input type="email" class="form-input" name="email" id="email" placeholder="Votre Email"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="pass" placeholder="Password"/>
+                            <input type="text" class="form-input" name="password" id="pass" placeholder="Mot de passe"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="repass" id="re_password" placeholder="Repeat your password"/>
+                            <input type="password" class="form-input" name="repass" id="re_password" placeholder="Confirmeation"/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                            <a href="<?php echo base_url('INSCRIT/Traitinscrit');?>"><input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/></a>
                         </div>
                     </form>
                     <p class="loginhere">
-                        Have already an account ? <a href="<?php echo base_url('Log/index');?>" class="loginhere-link">Login here</a>
+                       Avez-vous deja un compte? <a href="<?php echo base_url('Log/index');?>" class="loginhere-link">Se Connecter</a>
                     </p>
                 </div>
             </div>
