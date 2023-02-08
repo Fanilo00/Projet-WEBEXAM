@@ -15,7 +15,7 @@ class OBJET extends CI_Controller
         $this->load->mode('MObjet');
         $data['Objets']=$this->MObjet->get_listobjet();
         $data['Content']='Page/Home';
-        $this->load->view('Index',$data);
+        $this->load->view('Page/Index',$data);
     }
 
 } 
