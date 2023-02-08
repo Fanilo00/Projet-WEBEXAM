@@ -1,8 +1,7 @@
-create database Takalo;
-use Takalo;
+
 create table user
 (
-    Id_user int primary key auto_increment,
+    Id_user int  auto_increment primary key,
     Nom varchar(30),
     Email varchar(50),
     Pwd varchar(8),
@@ -11,7 +10,7 @@ create table user
 
 create table objet
 (
-    Id_Objet int primary key auto_increment,
+    Id_Objet int auto_increment primary key,
     Descri varchar(50),
     Photo varchar(100),
     Prix_estimatif int
@@ -20,7 +19,6 @@ insert into objet values (null,'New Music Taste','CDAlbum.jpg',50);
 insert into objet values (null,'Elegant Shoes','homme.jpg',100);
 insert into objet values (null,'Diary For Your Best Handwriting','journal.jpg',10);
 insert into objet values (null,'Autumn Flock High Heel Sandals','talon.jpg',120);
-insert into objet values (null,'Sport shoes','tenis.jpg',50,'Chaussures');
 insert into objet values (null,'Summer Tendance','lunettes.jpg',25);
 insert into objet values (null,'Performant Cellphone','phone.jpg',70);
 
@@ -36,7 +34,7 @@ insert into categorie values ('Technologie');
 
 create table objet_user
 (
-    Id_ObjetUser int primary key auto_increment,
+    Id_ObjetUser int  auto_increment primary key,
     Id_user int,
     Descri varchar(50),
     Photo varchar(100),
@@ -55,7 +53,7 @@ insert into objet_user values (null,3,'Performant Cellphone','phone.jpg',70,'tec
 
 create table refus
 (
-    Id_Refus int primary key auto_increment,
+    Id_Refus int auto_increment primary key,
     Id_user int,
     Id_Autre int,
     Id_Objet int,
@@ -67,7 +65,7 @@ create table refus
 
 create table acceptation
 (
-    Id_Accepte int primary key auto_increment,
+    Id_Accepte int  auto_increment primary key,
     Id_user int,
     Id_Autre int,
     Id_Objet int,
