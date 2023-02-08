@@ -58,9 +58,9 @@
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active"><a href="index.html"><span>ACCUEIL</span></a></li>
-                <li><a href="<?php echo base_url('OBJET/getCategorie');?>"><span>CATEGORIE</span></a></li>
-                <li><a href="about.html"><span>PROFIL</span></a></li>
-                <li><a href="blog.html"><span>DEMANDE</span></a></li>
+                <li><a href="#"><span>CATEGORIE</span></a></li>
+                <li><a href="#"><span>PROFIL</span></a></li>
+                <li><a href="#"><span>DEMANDE</span></a></li>
               </ul>
             </nav>
           </div>
