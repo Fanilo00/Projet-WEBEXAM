@@ -17,7 +17,7 @@
             {
                 $rs[]=$row;
             };
-            return false;
+            return $rs;
         }
         public function get_objetuser($categorie)
         {

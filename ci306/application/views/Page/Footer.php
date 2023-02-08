@@ -30,11 +30,13 @@
         
       </div>
     </footer>
-    <script src="<?php echo base_url();?>Assets/JS/footer/jquery-3.3.1.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/footer/popper.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/footer/bootstrap.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/header/jquery-3.3.1.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/header/popper.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/header/bootstrap.min.js"></script>
-    <script src="<?php echo base_url();?>Assets/JS/header/jquery.sticky.js"></script>
+</body>
+</html>
+    <script src="<?php echo base_url();?>Assets/Footer/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo base_url();?>Assets/Footer/js/popper.min.js"></script>
+    <script src="<?php echo base_url();?>Assets/Footer/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>Assets/Footer/js/jquery.sticky.js"></script>
+    <script src="<?php echo base_url();?>Assets/Footer/js/main.js"></script>
+
+
     <script src="<?php echo base_url();?>Assets/JS/header/main.js"></script>
