@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url();?>Assets/CSS/registre/styleReg.css">
 </head>
-<body>
+<body style="background-image: url(<?php echo base_url();?>Assets/Loginstyle/images/Back.jpg);">
 
     <div class="main">
 
