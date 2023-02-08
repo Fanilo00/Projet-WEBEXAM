@@ -35,7 +35,6 @@
         {
             $requete = "select * from objet_user where descri like "%'%s'%" and categorie like "%'%s'%"";
             $query = $this->db->query($query);
-            return $query->result();
         }
     }
 ?>
