@@ -16,6 +16,13 @@ create table objet
     Photo varchar(100),
     Prix_estimatif int
 );
+insert into objet values (null,'New Music Taste','CDAlbum.jpg',50);
+insert into objet values (null,'Elegant Shoes','homme.jpg',100);
+insert into objet values (null,'Diary For Your Best Handwriting','journal.jpg',10);
+insert into objet values (null,'Autumn Flock High Heel Sandals','talon.jpg',120);
+insert into objet values (null,'Sport shoes','tenis.jpg',50,'Chaussures');
+insert into objet values (null,'Summer Tendance','lunettes.jpg',25);
+insert into objet values (null,'Performant Cellphone','phone.jpg',70);
 
 create table Categorie
 (
@@ -25,6 +32,7 @@ insert into categorie values ('Musique');
 insert into categorie values ('Accessoires');
 insert into categorie values ('Chaussures');
 insert into categorie values ('Technologie');
+
 
 create table objet_user
 (
