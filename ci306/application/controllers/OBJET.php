@@ -12,10 +12,17 @@ class OBJET extends CI_Controller
 
     public function getObject()
     {
-        $this->load->mode('MObjet');
+        $this->load->model('MObjet');
         $data['Objets']=$this->MObjet->get_listobjet();
         $data['Content']='Page/Home';
-        $this->load->view('Index',$data);
+        $this->load->view('Page/Index',$data);
+    }
+    public function getCategorie()
+    {
+        $this->load->model('MObjet');
+        $data['Result']=$this->MObjet->get_objetuser();
+        $data['Content']='Page/Categorie';
+        $this->load->view('Page/Index',$data);
     }
 
 } 
