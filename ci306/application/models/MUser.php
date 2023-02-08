@@ -48,10 +48,18 @@
             return $conf;
         }
 
-        public function inscri_admin($nom,$email,$pass)
+        public function inscri_admin($nom,$email,$pass,$repass)
         {
-            $requete = "insert into user values(null,'$nom','$email','$pass',1)";
-            $query = $this->db->query($requete);
+            $requete = "insert into user values(null,%s,%s,%s,1)";
+            $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($email),$this->db->escape($pass),$this->db->escape($repass));
+            $this->db->escape($requete);
+            $line = $this->db->query($requete);
+            $conf = true;
+            if($line==0)
+            {
+                $conf = false;
+            }
+            return $conf;
         }
         
     }
