@@ -7,7 +7,7 @@
         {
             parent::__construct();
         }
-        public function check_objet()
+        public function get_listobjet()
         {
             $requete = "select * from objet";
             $query = $this->db->query($query);

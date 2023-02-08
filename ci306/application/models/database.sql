@@ -1,8 +1,5 @@
 create database Takalo;
 use Takalo;
-
-
-
 create table user
 (
     Id_user int primary key auto_increment,

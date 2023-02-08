@@ -40,7 +40,7 @@
             $query = $this->db->query($requete);
         }
 
-        public function inscri_admin()
+        public function inscri_admin($nom,$email,$pass)
         {
             $requete = "insert into user values(null,'$nom','$email','$pass',1)";
             $query = $this->db->query($requete);
