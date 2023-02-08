@@ -23,7 +23,8 @@ class LOGIN extends CI_Controller
         if($this->load->User->check_login($email,$pass))
         {
             $this->session->set_userdata('email',$email);
-            redirect('Log/index');
+            $data['Content']='Page/Home';
+           $this->load->view('Index',$data);
         }
         else
         {

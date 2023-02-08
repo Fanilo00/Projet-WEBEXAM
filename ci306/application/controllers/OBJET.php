@@ -8,14 +8,9 @@ class OBJET extends CI_Controller
     {
         parent::__construct();
        
-        if(!$this->session->has_userdata('email'))
-		{
-			redirect('Log/index');  
-		}
-		$this->load->model('User');
     }
-
-}
+    
+} 
 
 
 ?>

@@ -8,14 +8,27 @@ class INSCRIT extends CI_Controller
     {
         parent::__construct();
     }
-    
     public function forminscrit()
+    {
+        $this->load->view('Page/Inscription');
+    }
+    public function Traitinscrit()
     {
         $nom=$this->input->post('nom');
         $email=$this->input->post('email');
-        $pass=$this->input->post('mdp');
-        $this->load->User->inscri_user($nom,$email,$pass);
-        $this->load->view('Page/Login');
+        $pass=$this->input->post('pass');
+        $repass=$this->input->post('repass');
+        
+        if(strcmp($pass,$repass)==true)
+        {
+            $this->load->User->inscri_user($nom,$email,$pass);
+            Redirect('log/index');
+        }
+        else
+        {
+            Redirect('INSCRIT/forminscrit');
+        }
+        
     }
 }
 
