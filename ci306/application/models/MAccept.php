@@ -9,7 +9,7 @@
         }
         public function insert_accept()
         {
-            $requete = "insert into accept values (null,'$id','$idAutre','$idObj',NOW())";
+            $requete = "insert into acceptation values (null,'$id','$idAutre','$idObj',NOW())";
             $query = $this->db->query($query);
         }
     }
