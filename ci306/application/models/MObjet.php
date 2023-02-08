@@ -16,7 +16,6 @@
             foreach($query->result_array() as $row)
             {
                 $rs[]=$row;
-                $this->
             };
             return false;
         }
@@ -29,9 +28,8 @@
             foreach($query->result_array() as $row)
             {
                 $rs[]=$row;
-                $this->
             };
-            return false;
+            return $rs;
         }
     }
 ?>
