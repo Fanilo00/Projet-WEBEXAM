@@ -35,7 +35,7 @@
   
     <title>Takalo</title>
   </head>
-  <body style="background-image: url('<?php echo base_url();?>Assets/Images/hero_1.jpg');>
+  <body style="background-image: url('<?php echo base_url();?>Assets/Images/Back.jpg');>
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
