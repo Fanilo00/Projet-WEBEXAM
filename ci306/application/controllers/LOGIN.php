@@ -24,7 +24,7 @@ class LOGIN extends CI_Controller
         {
             $this->session->set_userdata('email',$email);
             $data['Content']='Page/Home';
-           $this->load->view('Index',$data);
+            $this->load->view('Index',$data);
         }
         else
         {

@@ -19,5 +19,17 @@
             };
             return false;
         }
+        public function get_objetuser($categorie)
+        {
+            $requete = "select * from objet_user where categorie ='$categorie'";
+            $query = $this->db->query($query);
+            $rs = array();
+
+            foreach($query->result_array() as $row)
+            {
+                $rs[]=$row;
+            };
+            return $rs;
+        }
     }
 ?>
