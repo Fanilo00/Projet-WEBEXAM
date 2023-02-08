@@ -1,9 +1,5 @@
 
-<div class="footer">
-          <p>ETU002112 </p>
-          <p>ETU002103</p>
-          <p>ETU002220</p>
-</div>
+
 <!-- <footer class="footer-59391">
       
    
@@ -36,13 +32,19 @@
         
 
     </footer> -->
+   
 </body>
+<div class="footer">
+          <div class="etu">ETU002112 </div>
+          <div class="etu">ETU002103 </div>
+          <div class="etu">ETU002220 </div>
+</div>
+</div>
 </html>
     <script src="<?php echo base_url();?>Assets/Footer/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo base_url();?>Assets/Footer/js/popper.min.js"></script>
     <script src="<?php echo base_url();?>Assets/Footer/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>Assets/Footer/js/jquery.sticky.js"></script>
     <script src="<?php echo base_url();?>Assets/Footer/js/main.js"></script>
-
 
     <script src="<?php echo base_url();?>Assets/JS/header/main.js"></script>

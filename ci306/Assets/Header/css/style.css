@@ -19,7 +19,7 @@ body {
     transition: .3s all ease;
     opacity: 0;
     visibility: hidden;
- }
+    z-index: 1; }
   body.offcanvas-menu:before {
     opacity: 1;
     visibility: visible; }

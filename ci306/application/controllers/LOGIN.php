@@ -21,16 +21,15 @@ class LOGIN extends CI_Controller
         $pass=$this->input->post('mdp');
         $this ->load->model('MUser');
         $this ->load->model('MObjet');
-        // if($this->MUser->check_login($email,$pass))
-        // {
+       
             $this->session->set_userdata('email',$email);
             $data['Content']='Page/Home';
             $data['Objets']=$this->MObjet->get_listobjet();
             $this->load->view('Page/Index',$data);
             
-        // }
+      
        
-        //    redirect('log/index');
+           
     }
        
 }
