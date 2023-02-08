@@ -19,5 +19,9 @@
             };
             return false;
         }
+        public function par_categorie($categorie)
+        {
+            $requete = "select "
+        }
     }
 ?>
