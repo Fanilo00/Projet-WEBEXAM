@@ -1,6 +1,6 @@
-<footer class="footer-59391">
+<!-- <footer class="footer-59391">
       
-        <div class="container">
+   
 
           
           <div class="row mb-5">
@@ -28,8 +28,8 @@
             </div>
           </div>
         
-      </div>
-    </footer>
+
+    </footer> -->
 </body>
 </html>
     <script src="<?php echo base_url();?>Assets/Footer/js/jquery-3.3.1.min.js"></script>
